@@ -8,16 +8,16 @@ import { NavLink, useNavigate } from "react-router-dom";
 import logo from './page_logo.jpg';
 
 const Header = () => {
-    const navigate = useNavigate();  // Use navigate to programmatically change route
+    const navigate = useNavigate();
 
-    // Handle Login button click
+
     const handleLogin = () => {
-        navigate('/login');  // Navigate to /login when clicked
+        navigate('/login');
     };
 
-    // Handle Register button click
+
     const handleRegister = () => {
-        navigate('/register');  // Navigate to /register when clicked
+        navigate('/register');
     };
 
     return (
@@ -41,11 +41,11 @@ const Header = () => {
                         <NavLink className="nav-link" to="/">Home</NavLink>
                         <NavLink className="nav-link" to="/watchList">Watch List</NavLink>
                     </Nav>
-                    {/* Login Button navigates to /login */}
+
                     <Button variant="outline-info" className="me-2" onClick={handleLogin}>
                         Login
                     </Button>
-                    {/* Register Button navigates to /register */}
+
                     <Button variant="outline-info" onClick={handleRegister}>
                         Register
                     </Button>

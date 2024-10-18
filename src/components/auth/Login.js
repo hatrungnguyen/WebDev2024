@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
-import './Login.css'; // Import the CSS file
+import './Login.css';
 
 const Login = () => {
     const [username, setUsername] = useState('');
@@ -13,9 +13,9 @@ const Login = () => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        console.log("Login button clicked!");  // Check if the event is firing
-        console.log(`Username: ${username}, Password: ${password}`);  // Debugging input values
-// Can remove the upward
+        console.log("Login button clicked!");
+        console.log(`Username: ${username}, Password: ${password}`);
+
         if (username === 'admin' && password === 'password') {
             alert('Login successful!');
             navigate('/');

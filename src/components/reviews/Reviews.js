@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import './Reviews.css';
 import { Link, useParams } from 'react-router-dom';
 
-const Reviews = ({ getMovieData, movie, reviews, setReviews,backgroundImage }) => {
+const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
     const [newReview, setNewReview] = useState('');
     const { movieId } = useParams();
 
-    // Fetch the correct movie data when movieId changes
+
     useEffect(() => {
         if (movieId) {
             getMovieData(movieId);
@@ -22,9 +22,11 @@ const Reviews = ({ getMovieData, movie, reviews, setReviews,backgroundImage }) =
             setNewReview('');
         }
     };
+    const backgroundImage = movie?.background_img || '/backGround/default-background.png';
 
     return (
-        <div className="review-section" style={{backgroundImage: `url(${backgroundImage})`}}>
+        <div className="review-section" style={{backgroundImage: `url(${backgroundImage})`
+           }}>
             <section className="movie-container">
                 <div className="movie-details">
                     {movie && <img src={movie.image} alt={movie.title}/>}
