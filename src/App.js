@@ -148,7 +148,7 @@ function App() {
         },        {
             id: 21,
             title: "Harry Potter and the Order of the Phoenix",
-            image: "/movies/harrypotter05.jpg",
+            image: "/movies/harrypotter5.jpg",
             trailerUrl: "LLAaW1EgyY8",
             reviews: []
         },        {
