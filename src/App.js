@@ -1,6 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import Layout from './components/Layout.js';
+import Layout from './components/layout.js';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/home/Home.js';
 import Header from './components/header/Header.js';
@@ -9,6 +9,15 @@ import Reviews from './components/reviews/Reviews.js';
 import NotFound from './components/notFound/NotFound.js';
 
 function App() {
+    const [movies, setMovies] = useState([
+        {
+            id: 1,
+            title: "Inception",
+            image: "/movies/inception.jpg",
+            trailerUrl: "5EiV_HXIIGs",
+            reviews: []
+        },
+    ]);
     const [movie, setMovie] = useState(null);
     const [reviews, setReviews] = useState([]);
 
