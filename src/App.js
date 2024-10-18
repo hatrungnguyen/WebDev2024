@@ -7,6 +7,9 @@ import Header from './components/header/Header.js';
 import Trailer from './components/trailer/Trailer.js';
 import Reviews from './components/reviews/Reviews.js';
 import NotFound from './components/notFound/NotFound.js';
+import Login from './components/auth/Login.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
     const [movies, setMovies] = useState([
@@ -284,9 +287,11 @@ function App() {
             background_img: "/background/bat3.png"
         },
     ]);
+
     const [movie, setMovie] = useState(null);
     const [reviews, setReviews] = useState([]);
 
+    // Function to get movie data based on the movie ID
     const getMovieData = (movieId) => {
         const selectedMovie = movies.find((movie) => movie.id === parseInt(movieId));
         if (selectedMovie) {
@@ -294,29 +299,41 @@ function App() {
             setReviews(selectedMovie.reviews);
         }
     };
+
     return (
         <div className="App">
             <Header />
             <Routes>
+                {/* Main layout with nested routes */}
                 <Route path="/" element={<Layout />}>
-                    <Route path="/" element={<Home movies={movies} />} />
-                    <Route path="/Trailer/:ytTrailerId" element={<Trailer />} />
+                    {/* Home Route */}
+                    <Route index element={<Home movies={movies} />} />
+
+                    {/* Trailer Route */}
+                    <Route path="Trailer/:ytTrailerId" element={<Trailer />} />
+
+                    {/* Reviews Route */}
                     <Route
-                        path="/Reviews/:movieId"
+                        path="Reviews/:movieId"
                         element={
                             <Reviews
                                 getMovieData={getMovieData}
                                 movie={movie}
                                 reviews={reviews}
                                 setReviews={setReviews}
-                                backgroundImage = {movie?.background_img}
                             />
                         }
                     />
+
+                    {/* Login Route */}
+                    <Route path="login" element={<Login />} />
+
+                    {/* Catch-All Route for NotFound */}
                     <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
         </div>
     );
 }
+
 export default App;
