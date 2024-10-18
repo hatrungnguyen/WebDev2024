@@ -117,7 +117,14 @@ function App() {
             image: "/movies/titanic.jpg",
             trailerUrl: "F2RnxZnubCM",
             reviews: []
-        }
+        },
+        {
+            id: 17,
+            title: "Harry Potter and the Sorcerer's Stone",
+            image: "/movies/harrypotter1.jpg",
+            trailerUrl: "Yki6KgoBstM",
+            reviews: []
+        },
     ]);
     const [movie, setMovie] = useState(null);
     const [reviews, setReviews] = useState([]);
