@@ -110,6 +110,13 @@ function App() {
             image: "/movies/50ShadesOfName.jpg",
             trailerUrl: "SfZWFDs0LxA",
             reviews: []
+        },
+        {
+            id: 16,
+            title: "Titanic",
+            image: "/movies/titanic.jpg",
+            trailerUrl: "F2RnxZnubCM",
+            reviews: []
         }
     ]);
     const [movie, setMovie] = useState(null);
