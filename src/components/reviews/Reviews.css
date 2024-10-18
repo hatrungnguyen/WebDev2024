@@ -106,6 +106,7 @@
 }
 
 .review-form button {
+    width: 100%;
     padding: 10px 20px;
     font-size: 1rem;
     background-color: #007bff;
@@ -113,6 +114,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
 }
 
 .review-form button:hover {
