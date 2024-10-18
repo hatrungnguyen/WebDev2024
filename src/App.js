@@ -125,6 +125,88 @@ function App() {
             trailerUrl: "Yki6KgoBstM",
             reviews: []
         },
+        {
+            id: 18,
+            title: "Harry Potter and the Chamber of Secrets",
+            image: "/movies/harrypotter2.jpg",
+            trailerUrl: "nE11U5iBnH0",
+            reviews: []
+        },
+        {
+            id: 19,
+            title: "Harry Potter and the Prisoner of Azkaban",
+            image: "/movies/harrypotter3.jpg",
+            trailerUrl: "lAxgztbYDbs",
+            reviews: []
+        },
+        {
+            id: 20,
+            title: "Harry Potter and the Goblet of Fire",
+            image: "/movies/harrypotter4.jpg",
+            trailerUrl: "3EGojp4Hh6I",
+            reviews: []
+        },        {
+            id: 21,
+            title: "Harry Potter and the Order of the Phoenix",
+            image: "/movies/harrypotter05.jpg",
+            trailerUrl: "LLAaW1EgyY8",
+            reviews: []
+        },        {
+            id: 22,
+            title: "Harry Potter and the Half-Blood Prince",
+            image: "/movies/harrypotter6.jpg",
+            trailerUrl: "tAiy66Xrsz4",
+            reviews: []
+        },        {
+            id: 23,
+            title: "Harry Potter and the Deathly Hallows: Part 1",
+            image: "/movies/harrypotter7.jpg",
+            trailerUrl: "nSu1LOpjvdZ4",
+            reviews: []
+        },        {
+            id: 24,
+            title: "Harry Potter and the Deathly Hallows: Part 2",
+            image: "/movies/harrypotter8.jpg",
+            trailerUrl: "mObK5XD8udk",
+            reviews: []
+        },        {
+            id: 25,
+            title: "The Hobbit: An Unexpected Journey",
+            image: "/movies/hobbit1.jpg",
+            trailerUrl: "9PSXjr1gbjc",
+            reviews: []
+        },{
+            id: 26,
+            title: "The Hobbit: The Battle of the Dragon",
+            image: "/movies/hobbit2.jpg",
+            trailerUrl: "iVAgTiBrrDA",
+            reviews: []
+        },{
+            id: 27,
+            title: "The Hobbit: The Battle of the Five Armies",
+            image: "/movies/hobbit3.jpg",
+            trailerUrl: "ZSzeFFsKEt4",
+            reviews: []
+        },
+        {
+            id: 28,
+            title: "Batman Begins",
+            image: "/movies/bat1.jpg",
+            trailerUrl: "neY2xVmOfUM",
+            reviews: []
+        },{
+            id: 29,
+            title: "The Dark Knight",
+            image: "/movies/bat2.jpg",
+            trailerUrl: "EXeTwQWrcwY",
+            reviews: []
+        },{
+            id: 30,
+            title: "The Dark Knight Rises",
+            image: "/movies/bat3.jpg",
+            trailerUrl: "GokKUqLcvD8",
+            reviews: []
+        },
     ]);
     const [movie, setMovie] = useState(null);
     const [reviews, setReviews] = useState([]);
