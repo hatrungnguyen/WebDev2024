@@ -291,7 +291,7 @@ function App() {
     const [movie, setMovie] = useState(null);
     const [reviews, setReviews] = useState([]);
 
-    // Function to get movie data based on the movie ID
+
     const getMovieData = (movieId) => {
         const selectedMovie = movies.find((movie) => movie.id === parseInt(movieId));
         if (selectedMovie) {
@@ -304,15 +304,15 @@ function App() {
         <div className="App">
             <Header />
             <Routes>
-                {/* Main layout with nested routes */}
+
                 <Route path="/" element={<Layout />}>
-                    {/* Home Route */}
+
                     <Route index element={<Home movies={movies} />} />
 
-                    {/* Trailer Route */}
+
                     <Route path="Trailer/:ytTrailerId" element={<Trailer />} />
 
-                    {/* Reviews Route */}
+
                     <Route
                         path="Reviews/:movieId"
                         element={
@@ -325,10 +325,10 @@ function App() {
                         }
                     />
 
-                    {/* Login Route */}
+
                     <Route path="login" element={<Login />} />
 
-                    {/* Catch-All Route for NotFound */}
+
                     <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
