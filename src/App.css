@@ -67,3 +67,37 @@ h2 {
     font-size: 14px;
     color: #fff3cd;
 }
+
+.review-button {
+    background-color: #f39c12;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.review-button:hover {
+    background-color: #e67e22;
+}
+
+.trailer-button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.trailer-button:hover {
+    background-color: #218838;
+}
